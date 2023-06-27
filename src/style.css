@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#content{
+    position: relative;
+    background: url('./img/pic11.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity: 0.75;
+    display: grid;
+}
+
+.ueberschriftKlein {
+    justify-content: center;
+    justify-self: center;
+    padding: 20px;
+    top: 20px;
+    bottom: 20px;
+}
+
+.text {
+    justify-content: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.navi {
+    justify-content: right;
+    width: 100px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 25px;
+    justify-self: right;
+    background-color: rgba(203, 216, 216,0.5);
+    border-radius: 10px  0 10px 10px;
+}
+
+.ueberschriftGross {
+    font-size: 20px;
+    hyphens: auto;
+    justify-content: center;
+    justify-self: center;
+    border: 5px solid white;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.foot {
+    background-color: rgba(203, 216, 216,0.5);
+    justify-content: center;
+    justify-self: center;
+    width: 300px;
+    border-radius: 10px 10px 0  0;
+}
+
+.devicon-facebook-plain{
+    font-size: 15px;
+    justify-content: center;
+    justify-self: center;
+    padding: 5px;
+}
