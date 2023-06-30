@@ -1,66 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-
-#content{
-    position: relative;
-    background: url('./img/pic11.jpg');
-    background-position: center;
-    background-size:cover;
-    opacity: 0.75;
-    display: grid;
+body {
+  display: grid;
+  justify-content: center;
 }
 
-.ueberschriftKlein {
-    justify-content: center;
-    justify-self: center;
-    padding: 20px;
-    top: 20px;
-    bottom: 20px;
+#content {
+  position: relative;
+  display: grid;
 }
+
+#content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./img/pic11.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.main {
+  position: relative;
+  display: grid;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./img/pic12.jpg');
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+  background-color: rgba(128, 125, 125, 0.2);
+}
+
 
 .text {
-    justify-content: center;
-    justify-self: center;
-    padding: 20px;
+  margin-top: 200px;
+  justify-self: center;
+  padding: 20px;
+  border: 1px white solid;
+  border-radius: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgb(67, 86, 70);
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .navi {
-    justify-content: right;
-    width: 100px;
-    margin-bottom: 20px;
-    padding: 5px;
-    font-size: 25px;
-    justify-self: right;
-    background-color: rgba(203, 216, 216,0.5);
-    border-radius: 10px  0 10px 10px;
+  display: grid;
+  justify-content: center;
+  width: 300px;
+  padding: 15px;
+  font-size: 20px;
+  justify-self: center;
+  background-color: rgba(203, 216, 216, 0.5);
+  color: rgb(67, 86, 70);
+  border-radius: 10px 0 10px 10px;
+  text-decoration: underline;
 }
 
 .ueberschriftGross {
-    font-size: 20px;
-    hyphens: auto;
-    justify-content: center;
-    justify-self: center;
-    border: 5px solid white;
-    padding: 20px;
-    background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  font-weight: bold;
+  color: rgb(23, 29, 20);
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  hyphens: auto;
+  justify-self: center;
+  border: solid 3px white;
+  color: rgb(1, 98, 25);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-
-.foot {
-    background-color: rgba(203, 216, 216,0.5);
-    justify-content: center;
-    justify-self: center;
-    width: 300px;
-    border-radius: 10px 10px 0  0;
+li,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
 }
 
-.devicon-facebook-plain{
-    font-size: 15px;
-    justify-content: center;
-    justify-self: center;
-    padding: 5px;
+#foot {
+  background-color: rgba(203, 216, 216, 0.5);
+  justify-self: center;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px 10px 0 0;
+}
+
+.img1,
+.img2 {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  height: 180px;
+  width: 180px;
+  border: solid 3px rgb(67, 86, 70);
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+.img1 {
+  grid-row: span 1;
+  justify-self: center;
+  margin-right: 20px;
+}
+
+.img2 {
+  grid-row: span 1;
+  justify-self: center;
+  margin-right: 20px;
+}
+
+.logo {
+  display: grid;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  justify-self: center;
+}
+.img3 {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.img4 {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.img5 {
+  width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.img6 {
+  width: 400px;
+  height: auto;
+}
+
+.contactTextarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactButton:hover {
+  background-color: #45a049;
 }
