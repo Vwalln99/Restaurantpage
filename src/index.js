@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import './style.css';
 import { createTags, addImages, appendImages } from './modules/functions';
 
@@ -16,6 +17,7 @@ menuItems.forEach(item => {
   listItem.classList.add('menu-item');
   listItem.setAttribute('data-tab', item);
   listItem.addEventListener('click', () => {
+    console.log("jh")
     loadModule(item);
   });
   navigationList.appendChild(listItem);
@@ -42,7 +44,7 @@ foot.id = "foot";
 foot.classList.add("devicon-facebook-plain");
 foot.textContent = " | 2023";
 
-const images = addImages(['./img/farmer.jpg', './img/spaghetti_fork.jpg','./img/logo.png']);
+const images = addImages(['./img/farmer.jpg', './img/spaghetti_fork.jpg','./img/logo.jpg']);
 images[0].classList.add('img1');
 images[1].classList.add('img2');
 images[2].classList.add('logo')
@@ -65,17 +67,17 @@ function loadModule(moduleName) {
   section.innerHTML = '';
 
   switch (moduleName) {
-    case 'home':
+    case 'Home':
       section.appendChild(heading2);
       section.appendChild(heading);
       section.appendChild(text);
       section.appendChild(images[0]);
       section.appendChild(images[1]);
       break;
-    case 'menu':
+    case 'Menu':
       menuModule(section); 
       break;
-    case 'contact':
+    case 'Contact':
       contactModule(section); 
       break;
     default:
@@ -83,4 +85,4 @@ function loadModule(moduleName) {
   }
 }
 
-loadModule('home'); 
+loadModule('Home'); 

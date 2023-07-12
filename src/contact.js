@@ -1,3 +1,5 @@
+import _ from 'lodash';
+import './style.css';
 import { createTags, addImages, appendImages } from './modules/functions';
 
 export const contactModule = (section) => {
