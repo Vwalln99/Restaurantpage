@@ -9,7 +9,7 @@ export const contactModule = (section) => {
   contactHeading.className = "ueberschriftGross";
   contactHeading.textContent = "Contact";
 
-  contactText.className = "text";
+  contactText.className = "text_contact";
   contactText.textContent = "Get in touch with us for inquiries and reservations!";
 
   contactTextarea.className = "contactTextarea";
@@ -18,7 +18,7 @@ export const contactModule = (section) => {
   contactButton.textContent = "Send";
 
   const images = addImages(['./img/map.jpg', './img/restaurant.jpg']);
-  images[0].classList.add('img5');
-  images[1].classList.add('img6');
+  images[0].classList.add('img9');
+  images[1].classList.add('img0');
   appendImages(section, [contactHeading, contactText, ...images, contactTextarea, contactButton]);
 };
